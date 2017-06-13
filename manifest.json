@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "fivetwentyfour",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.creditkarma.com/*"
+      ],
+      "js": ["jquery-3.2.1.min.js", "content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "web_accessible_resources": [
+    "524.html"
+  ],
+  "permissions":
+      ["tabs","https://www.creditkarma.com/*", "webNavigation"]
+
+}
