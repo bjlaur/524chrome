@@ -5,7 +5,6 @@
  * Written by Bryan Laur (https://github.com/bjlaur)
  */
  -->
-
 <section class="section-primary section-dark pv3 pv4-l ph3">
 		<div class="section-inner center">
 			<header class="section-header flex flex-wrap justify-between items-start">
@@ -30,8 +29,33 @@
 						</tr>
 					</tbody>
 				</table>
+				
+				
+				
+				
 			</header>
 
-			<div class="section-content"></div>
-		</div>
+			<div class="section-content">
+				<table>
+					<tr>
+						<td><select name="output_selection" id="output_selection">
+							<option value="chart">
+								Chart
+							</option>
+
+							<option value="csv">
+								csv
+							</option>
+
+							<option value="json">
+								json
+							</option>
+						</select></td>
+
+						<td>
+							<div id="report_output">
+						</td>
+					</tr>
+				</table>
+			</div>
 </section>

@@ -24,7 +24,7 @@ function doStepOne() {
 function onClassRemove(root, targetClass, callback) {
 	
 	var x = new MutationObserver(function (mutations) {
-		debugger;
+		//debugger;
 		if (isDevMode) console.log(mutations);
 
 		for (var i=0; i < mutations.length; i++){
@@ -127,8 +127,8 @@ function runReporting() {
 	
 	Promise.all(promises).then(function()
 	{
-		debugger;
-		console.log(list);
+		//debugger;
+		//console.log(list);
 	});
 	
 }
